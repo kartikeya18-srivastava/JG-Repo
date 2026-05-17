@@ -46,11 +46,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className={`font-semibold text-sm tracking-wide transition-colors duration-300 hover:text-blue-600 ${
-                  isScrolled 
-                    ? "text-slate-700 dark:text-slate-200" 
-                    : "text-white drop-shadow-sm"
-                }`}
+                className="font-semibold text-sm tracking-wide text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
               >
                 {link.name}
               </a>
@@ -59,11 +55,7 @@ export default function Navbar() {
               href="https://jguni.in/admissions.html"
               target="_blank"
               rel="noopener noreferrer"
-              className={`px-5 py-2.5 rounded-full font-bold text-sm tracking-wide transition-all duration-300 hover:shadow-lg hover:scale-105 ${
-                isScrolled 
-                  ? "bg-blue-600 text-white hover:bg-blue-700" 
-                  : "bg-white text-slate-900 hover:bg-slate-100"
-              }`}
+              className="px-5 py-2.5 rounded-full font-bold text-sm tracking-wide bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg hover:scale-105 transition-all duration-300"
             >
               Admissions Open
             </a>
@@ -75,9 +67,9 @@ export default function Navbar() {
             className="md:hidden relative z-10 p-2"
           >
             <div className="w-6 h-5 flex flex-col justify-between">
-              <span className={`w-full h-0.5 rounded transition-all duration-300 ${isOpen ? "rotate-45 translate-y-2 bg-slate-900 dark:bg-white" : isScrolled ? "bg-slate-900 dark:bg-white" : "bg-white"}`} />
-              <span className={`w-full h-0.5 rounded transition-all duration-300 ${isOpen ? "opacity-0" : isScrolled ? "bg-slate-900 dark:bg-white" : "bg-white"}`} />
-              <span className={`w-full h-0.5 rounded transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-2 bg-slate-900 dark:bg-white" : isScrolled ? "bg-slate-900 dark:bg-white" : "bg-white"}`} />
+              <span className={`w-full h-0.5 rounded transition-all duration-300 bg-slate-900 dark:bg-white ${isOpen ? "rotate-45 translate-y-2" : ""}`} />
+              <span className={`w-full h-0.5 rounded transition-all duration-300 bg-slate-900 dark:bg-white ${isOpen ? "opacity-0" : ""}`} />
+              <span className={`w-full h-0.5 rounded transition-all duration-300 bg-slate-900 dark:bg-white ${isOpen ? "-rotate-45 -translate-y-2" : ""}`} />
             </div>
           </button>
         </div>
