@@ -1,0 +1,4 @@
+[build]
+  base = "jguni-redesign"
+  publish = "jguni-redesign/out"
+  command = "npm run build"
