@@ -1,6 +1,6 @@
 [build]
   base = "jguni-redesign"
-  publish = "jguni-redesign/out"
+  publish = "out"
   command = "npm run build"
 
 [build.environment]
