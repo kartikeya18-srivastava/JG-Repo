@@ -23,11 +23,34 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+      {/* Top Corporate Banner */}
+      <div className="bg-[#002147] text-white text-xs sm:text-sm py-2.5 border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-6 sm:px-12 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <span className="flex h-2 w-2 relative">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+            </span>
+            <span className="font-semibold text-white/95">
+              Admissions Open for UG & PG Programs 2025-26. 
+              <a href="#contact" className="text-yellow-400 hover:text-yellow-300 hover:underline font-bold ml-1.5 inline-flex items-center gap-1">
+                Apply Now <span className="text-xs">→</span>
+              </a>
+            </span>
+          </div>
+          <div className="hidden md:flex items-center gap-4 text-white/80 text-xs font-semibold">
+            <a href="#contact" className="hover:text-white transition-colors">FAQs</a>
+            <span className="text-white/30">|</span>
+            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+      </div>
+
       <nav 
         className={`w-full transition-all duration-300 ${
           isScrolled 
-            ? "bg-white/90 dark:bg-slate-900/90 backdrop-blur-md py-4 shadow-lg border-b border-slate-200/50 dark:border-slate-800/50" 
-            : "bg-transparent py-6"
+            ? "bg-white/95 backdrop-blur-md py-4 shadow-lg border-b border-slate-200/50" 
+            : "bg-white/70 backdrop-blur-sm py-5 border-b border-slate-200/20"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-12 flex items-center justify-between">
@@ -46,15 +69,13 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="font-semibold text-sm tracking-wide text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+                className="font-semibold text-sm tracking-wide text-slate-800 hover:text-blue-600 transition-colors duration-300"
               >
                 {link.name}
               </a>
             ))}
             <a
-              href="https://jguni.in/admissions.html"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               className="px-5 py-2.5 rounded-full font-bold text-sm tracking-wide bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg hover:scale-105 transition-all duration-300"
             >
               Admissions Open
@@ -67,9 +88,9 @@ export default function Navbar() {
             className="md:hidden relative z-10 p-2"
           >
             <div className="w-6 h-5 flex flex-col justify-between">
-              <span className={`w-full h-0.5 rounded transition-all duration-300 bg-slate-900 dark:bg-white ${isOpen ? "rotate-45 translate-y-2" : ""}`} />
-              <span className={`w-full h-0.5 rounded transition-all duration-300 bg-slate-900 dark:bg-white ${isOpen ? "opacity-0" : ""}`} />
-              <span className={`w-full h-0.5 rounded transition-all duration-300 bg-slate-900 dark:bg-white ${isOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+              <span className={`w-full h-0.5 rounded transition-all duration-300 bg-slate-900 ${isOpen ? "rotate-45 translate-y-2" : ""}`} />
+              <span className={`w-full h-0.5 rounded transition-all duration-300 bg-slate-900 ${isOpen ? "opacity-0" : ""}`} />
+              <span className={`w-full h-0.5 rounded transition-all duration-300 bg-slate-900 ${isOpen ? "-rotate-45 -translate-y-2" : ""}`} />
             </div>
           </button>
         </div>
@@ -91,9 +112,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://jguni.in/admissions.html"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             onClick={() => setIsOpen(false)}
             className="mt-4 px-8 py-3.5 bg-blue-600 text-white rounded-full font-bold text-lg hover:bg-blue-700 transition-all shadow-lg hover:scale-105"
           >

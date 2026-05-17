@@ -9,12 +9,11 @@ import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { AnnouncementTicker, FloatingApplyWidget } from "@/components/Widgets";
+import { FloatingApplyWidget } from "@/components/Widgets";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <AnnouncementTicker />
       <Navbar />
       <Hero />
       <About />

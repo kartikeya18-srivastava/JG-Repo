@@ -7,30 +7,30 @@ export default function Footer() {
     {
       title: "Discover",
       items: [
-        { name: "Vision", href: "https://jguni.in/why-us.html#vision" },
-        { name: "Our DNA", href: "https://jguni.in/our-dna.html" },
-        { name: "Why Us", href: "https://jguni.in/why-us.html" },
-        { name: "Faculty", href: "https://jguni.in/faculty.html" },
-        { name: "Our Leaders", href: "https://jguni.in/our-leaders.html" },
+        { name: "Vision", href: "#about" },
+        { name: "Our DNA", href: "#about" },
+        { name: "Why Us", href: "#about" },
+        { name: "Faculty", href: "#about" },
+        { name: "Our Leaders", href: "#about" },
       ],
     },
     {
       title: "Programmes",
       items: [
-        { name: "Undergraduate", href: "https://jguni.in/admissions.html" },
-        { name: "Postgraduate", href: "https://jguni.in/admissions.html" },
-        { name: "Doctoral (Ph.D)", href: "https://jguni.in/doctoral-programmes.html" },
-        { name: "NEP 2020", href: "https://jguni.in/nep-2020.html" },
+        { name: "Undergraduate", href: "#programs" },
+        { name: "Postgraduate", href: "#programs" },
+        { name: "Doctoral (Ph.D)", href: "#programs" },
+        { name: "NEP 2020", href: "#programs" },
       ],
     },
     {
       title: "Quick Links",
       items: [
         { name: "Campus", href: "#campus" },
-        { name: "Collaborations", href: "https://jguni.in/collaborations.html" },
-        { name: "Career", href: "https://jguni.in/career.html" },
-        { name: "Awards", href: "https://jguni.in/awards-recognition.html" },
-        { name: "FAQs", href: "https://jguni.in/faq.html" },
+        { name: "Collaborations", href: "#about" },
+        { name: "Career", href: "#contact" },
+        { name: "Awards", href: "#about" },
+        { name: "FAQs", href: "#contact" },
       ],
     },
   ];
